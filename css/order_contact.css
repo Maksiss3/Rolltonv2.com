@@ -2,6 +2,7 @@ body{
   background: var(--primary-color);
 }
 
+@media only screen and (min-width: 601px){
 /* Order */
 .order_flex_main{
   position: relative;
@@ -159,3 +160,5 @@ input{
   left: -500px;
   bottom: -30px;
 } 
+
+}

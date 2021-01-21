@@ -35,7 +35,7 @@
         <div class="large_text">
           <h1>Are you ready for the worlds <span>greatest</span> pleasures?</h1>
         </div>
-        <button id="yes_button"><a href="order.html">YES</a></button>
+        <a id="yes_button" href="order.html">YES</a>
         <div id="no_button">
           <a href="https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines" target="_blank">Uhh...No Thanks</a>
         </div>
@@ -81,29 +81,5 @@
 
   <script src=".js/anime.min.js"></script>
   <script src=".js/index.js"></script>
-  <script>
-    const banner = document.getElementById('banner');
-    const logo = document.getElementById('logo');
-    const navbar = document.getElementById('navbar');
-    
-    let new_scroll_position = 0;
-    let last_scroll_position;
-
-    window.addEventListener('scroll', () => {
-      last_scroll_position = window.scrollY;
-
-      // Scrolling down
-      if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-        navbar.classList.add("nav_hidden");
-
-      // Scrolling up
-      } else if (new_scroll_position > last_scroll_position) {
-        navbar.classList.remove("nav_hidden");
-      }
-
-      new_scroll_position = last_scroll_position;
-    });
-  </script>
-  
 </body>
 </html>

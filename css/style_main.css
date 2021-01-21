@@ -49,17 +49,14 @@
     border-radius: 30px;
     border-color: var(--secondary-color);
     outline: none;
+    font-size: 3rem;
+    color:var(--secondary-color);
   }
 
-  #yes_button:hover, #yes_button:hover a{
+  #yes_button:hover{
     cursor: pointer;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-  }
-
-  #yes_button a{
-    font-size: 3rem;
-    color:var(--secondary-color);
   }
 
   #no_button a{
