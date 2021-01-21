@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/order_contact.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <title>Order a better life</title>
+</head>
+<body>
+  <section class="order_page">
+    <div class="navTrigger">
+      <i></i><i></i><i></i>
+    </div>
+    <div id="navbar">
+      <a href="index.html"><img id="banner" src="img/banner.svg" alt="banner"></a>
+      <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo"></a>      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#nutrition">Nutrition</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="order_flex_main">
+      <h3 class="text-primary">Pieces</h3>
+      <div class="pieces_buttons">
+        <button class="btn-primary" data-images="5" data-value="100" onClick=generatePrice(this)>100</button>
+        <button class="btn-primary" data-images="10" data-value="1000" onClick=generatePrice(this)>1k</button>
+        <button class="btn-primary" data-images="20" data-value="10000" onClick=generatePrice(this)>10k</button>
+        <button class="btn-primary" data-images="40" data-value="100000" onClick=generatePrice(this)>100k</button>
+        <button class="btn-primary" data-images="80" data-value="1000000" onClick=generatePrice(this)>1M</button>
+        <button class="btn-primary" data-images="120" data-value="10000000" onClick=generatePrice(this)>10M</button>
+      </div>
+      <div class="total_flex">
+        <h3 class='text-primary'>Total</h3>
+        <div class='text-primary'><span id="sum">0</span> €</div>
+      </div>
+      <button class="btn-primary btn-order" onClick=startAnimation(this)>Order</button>
+      <svg id="motion_path" background="green" width="252" height="365">
+        <path stroke="none" stroke-width="1px" fill="none" d="M 0 0 C 112 -10 188 29 252 365"></path>
+      </svg>
+    </div>  
+    <img class="rollton" src="/img/Rolton.png" alt="Rollton">
+    <div id="truck">
+      <img class="truck" src="/img/Truck.png" alt="">
+      <img class="truck_logo" src="img/Logo.png" alt="">
+      <img class="wheel_left" src="/img/Wheel.png" alt="">
+      <img class="wheel_right" src="/img/Wheel.png" alt="">
+    </div>
+    </section>
+
+    <script src=".js/anime.min.js"></script>
+    <script src=".js/order.js"></script>
+</body>
+

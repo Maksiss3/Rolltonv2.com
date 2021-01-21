@@ -1,0 +1,161 @@
+body{
+  background: var(--primary-color);
+}
+
+/* Order */
+.order_flex_main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.btn-order{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pieces_buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.total_flex{
+  display: flex;
+  width: 100%;
+  align-items: space-between;
+  justify-content: space-between;
+  text-align: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+
+/* Contact */
+.contact_flex_main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+::placeholder{
+  font-family: 'Philospher';
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+input{
+  color: var(--secondary-color);
+  font-family: 'Philosopher';
+  font-size: 0.9rem;
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--secondary-color);
+  width: 100%;
+  outline: none;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact_info{
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.contact_info > input{
+  margin: 30px 30px;
+}
+
+#subject{
+  margin: 0px 0px 40px 0px;
+}
+
+#message{
+  margin: 20px;
+  width:100%;
+  height: 20vh;
+  background: none;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  color: var(--secondary-color);
+  font-family: 'Philospher';
+  padding: 5px;
+}
+
+/* Truck animation */
+.rollton{
+  position:absolute;
+  bottom: 300px;
+  left: -450px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+#truck{
+  bottom: -120px;
+  left: -350px;
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: contain;
+  position: relative;
+}
+
+.truck{
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: contain;
+  right: 20px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.wheel_left{
+  position: absolute;
+  max-width: 47px;
+  max-height: 47px;
+  object-fit: contain;
+  left: 52px;
+  bottom: -28px;
+}
+
+.wheel_right{
+  position: absolute;
+  max-width: 47px;
+  max-height: 47px;
+  object-fit: contain;
+  left: 202px;
+  bottom: -26px;
+}
+
+.truck_logo{
+  position: absolute;
+  max-width: 80px;
+  max-height: 50px;
+  object-fit: contain;
+  left: 50px;
+  bottom: 50px;
+}
+
+#motion_path{
+  position: absolute;
+  left: -500px;
+  bottom: -30px;
+} 

@@ -1,0 +1,223 @@
+@media only screen and (min-width: 601px){
+  /* Landing Page */
+
+  #landing{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(farthest-side at 450px 380px, var(--primary-light) 10%, var(--primary-color) 60%, var(--primary-color) 100%);
+  }
+
+  .hero_flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 400px 180px 400px 350px;
+    height: 100%;
+  }
+
+  #rollton{
+    transition: all 0.5s ease;
+  }
+
+  #rollton:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+  }
+
+  .hero_flex_right{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #landing div.large_text{
+    max-width: 500px;
+    text-align: center;
+  }
+
+  #landing div.large_text h1 > span{
+    color: var(--secondary-color);
+  }
+
+  #yes_button{
+    padding: 5px 190px;
+    margin: 20px 0;
+    background: none;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: var(--secondary-color);
+    outline: none;
+  }
+
+  #yes_button:hover, #yes_button:hover a{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  #yes_button a{
+    font-size: 3rem;
+    color:var(--secondary-color);
+  }
+
+  #no_button a{
+    color: var(--secondary-color);
+  }
+
+  #landing > a >#next{
+    position: absolute;
+    max-width: 45px;
+    max-height: 45px;
+    right: 40px;
+    bottom: 20px;
+  }
+
+  #landing > a > #next:hover{
+    animation: btn_animate 0.5s ease-out 10 alternate;
+  }
+
+  /* Nutrition Section */
+  .columns{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .column-1{
+    flex: 1;
+    background: url('/img/Ramen_closeup.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+
+  .column-1:after{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+  }
+
+  .table{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin: calc(100vh/4) 110px;
+  }
+
+  .table ul.names{
+    font-size: 1.8rem;
+    list-style: none;
+    color: var(--primary-color);
+    z-index: 1;
+    text-align: left;
+    line-height: 2;
+  }
+
+  .table ul.names li{
+    position: relative;
+  }
+
+  .table ul.names li::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:-20px;
+    background: var(--primary-color);
+    width: 320%;
+    height: 2px;
+    z-index: 2;
+  }
+
+  .table ul.values{
+    font-size: 1.8rem;
+    list-style: none;
+    color: var(--primary-color);
+    z-index: 1;
+    text-align: right;
+    line-height: 2;
+  }
+
+  .column-2{
+    background: linear-gradient(180deg, rgba(	255, 238, 0, 0.3) 1%, var(--primary-light) 4%, transparent 50%);
+    flex:1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .column-2 h1{
+    margin: calc(100vh/4) auto;
+    max-width: 500px;
+    font-size: 4rem;
+  }
+
+  .column-2 h1 span{
+    color: var(--primary-color);
+    text-shadow: 2px 2px black;
+  }
+
+  #nutrition{
+    position: relative;
+  }
+
+  #nutrition > a > #next{
+    position: absolute;
+    max-height: 45px;
+    max-width: 45px;
+    object-fit: contain;
+    bottom: 20px;
+    right: 40px;
+    transition: all 0.5 ease-in-out;
+  }
+
+  #nutrition > a > #next:hover{
+    animation: btn_animate 0.5s ease-out 10 alternate;
+  }
+
+  @keyframes btn_animate{
+    to{
+      transform: translateY(-10px)
+    }
+  }
+
+  /* The Crunch */
+  #crunch{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bevan', sans-serif;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #crunch h1{
+    font-size: 12rem;
+    line-height: 1.4;
+  }
+
+  #crunch h1 span{
+    background-image: url(/img/Ramen_texture.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+  }
+
+  #crunch h2{
+    font-size: 4rem;
+  }
+
+  #crunch h2 span{
+    color: var(--primary-color);
+    text-shadow: 2px 2px black;
+  }
+
+}

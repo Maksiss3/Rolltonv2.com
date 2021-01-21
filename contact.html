@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/order_contact.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <title>Contact Us</title>
+</head>
+<body>
+  <section class="contact_page">
+    <div class="navTrigger">
+      <i></i><i></i><i></i>
+    </div>
+    <div id="navbar">
+      <a href="index.html"><img id="banner" src="img/banner.svg" alt="banner"></a>
+      <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#nutrition">Nutrition</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="contact_flex_main">
+      <form class="form">
+        <div class="contact_info">
+          <label for="email"></label>
+          <input type="text" name="email" id="email" placeholder="*Email">
+          <label for="phone"></label>
+          <input type="text" name="phone" id="phone" placeholder="Phone">
+        </div>
+        <label for="subject"></label>
+        <input type="text" name="subject" id="subject" placeholder="*Subject"> 
+      </form>
+      <textarea name="message" id="message" placeholder="*Message..."></textarea>
+      <button class="btn-primary" style ="width: 300px; margin: 20px 0px;">Send <img src="img/send-button.svg" alt="" style="max-height: 16px; max-width: 16px; object-fit: contain;"></button>
+      <h3 style= "color: var(--secondary-color); font-size: 0.6rem;">*This doesn't do anything*</h3>
+    </div>  
+  </section>
+
+  <script src=".js/anime.min.js"></script>
+  <script src=".js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/style_main.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <title>Welcome To My Sanctuary</title>
+</head>
+<body>
+  
+  <header id="landing">
+    <div class="navTrigger">
+      <i></i><i></i><i></i>
+    </div>
+    <div id="navbar">
+      <a href="index.html"><img id="banner" src="img/banner.svg" alt="banner"></a>
+      <a href="index.html"><img id="logo" src="img/Logo.png" alt="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#nutrition">Nutrition</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero_flex">
+      <img id="rollton" src="/img/Rolton.png" alt="Rollton">
+      <div class="hero_flex_right">
+        <div class="large_text">
+          <h1>Are you ready for the worlds <span>greatest</span> pleasures?</h1>
+        </div>
+        <button id="yes_button"><a href="order.html">YES</a></button>
+        <div id="no_button">
+          <a href="https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines" target="_blank">Uhh...No Thanks</a>
+        </div>
+      </div>
+    </div>  
+    <a href="#nutrition"><img id="next" src="/img/next.svg" alt=""></a>
+  </header>
+
+  <section id="nutrition" class="columns">
+    <div class="column-1">
+      <div class="table">
+        <ul class="names">
+          <li>Energy value</li>
+          <li>Fat</li>
+          <li>Carbohydrates</li>
+          <li>Sugars</li>
+          <li>Protein</li>
+          <li>Salt</li>
+          <li>Immortality</li>
+        </ul>
+        <ul class="values">
+          <li>1892 kJ / 452 Kcal</li>
+          <li>21.10 g</li>
+          <li>56.70 g</li>
+          <li>0.51 g</li>
+          <li>8.70 g</li>
+          <li>4.54 g</li>
+          <li>Yes</li>
+          <li>(100 g/ml)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-2" class="large_text">
+      <h1>Ever wondered what’s it like to be <span>a God</span> ?</h1>
+    </div>
+    <a href="#crunch"><img id="next" src="/img/next.svg" alt=""></a>
+  </section>
+
+  <section id="crunch">
+    <h1>FEEL THE <span>CRUNCH</span></h1>
+    <h2>ENJOY THE <span>POWER</span></h2>
+  </section>
+
+  <script src=".js/anime.min.js"></script>
+  <script src=".js/index.js"></script>
+  <script>
+    const banner = document.getElementById('banner');
+    const logo = document.getElementById('logo');
+    const navbar = document.getElementById('navbar');
+    
+    let new_scroll_position = 0;
+    let last_scroll_position;
+
+    window.addEventListener('scroll', () => {
+      last_scroll_position = window.scrollY;
+
+      // Scrolling down
+      if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+        navbar.classList.add("nav_hidden");
+
+      // Scrolling up
+      } else if (new_scroll_position > last_scroll_position) {
+        navbar.classList.remove("nav_hidden");
+      }
+
+      new_scroll_position = last_scroll_position;
+    });
+  </script>
+  
+</body>
+</html>
