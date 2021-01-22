@@ -45,6 +45,14 @@ const to_X_2 =({
   easing: 'linear',
 });
 
+list_items = document.querySelectorAll('#navbar nav ul li');
+const text_opacity=({
+  targets: list_items,
+  opacity: 1,
+  duration: 10,
+  easing: 'linear',
+})
+
 const nav_reveal =({
   targets: '#navbar',
   width: '80%',
@@ -59,7 +67,8 @@ burger_menu
   .add(fill_circle)
   .add(to_X_1)
   .add(to_X_2, '-=50')
-  .add(nav_reveal)
+  .add(text_opacity)
+  .add(nav_reveal, '-=50')
 
 var mq = window.matchMedia( "(max-width: 600px)" );
 if (mq.matches) { // window width is at less than 600px
