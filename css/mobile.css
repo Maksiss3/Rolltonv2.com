@@ -105,7 +105,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background: radial-gradient(circle at 185px 460px,var(--primary-light) 20%, var(--primary-color) 40%, var(--primary-color) 100%);
+    background: radial-gradient(circle at 250px 530px,var(--primary-light) 20%, var(--primary-color) 40%, var(--primary-color) 100%);
   }
 
   .hero_flex{

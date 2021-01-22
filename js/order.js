@@ -180,7 +180,7 @@ function truckAnimationMobile(){
 
   const rolltonDrop = ({
     targets: '.rollton',
-    translateY: 630,
+    translateY: 750,
     scale: function(el, i){
       return anime.random(0.4, 1.1)
     },
