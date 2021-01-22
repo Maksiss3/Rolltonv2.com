@@ -82,24 +82,6 @@ function numberAnimation(previous_total, total){
   });
 }
 
-var mq = window.matchMedia( "(max-width: 600px)" );
-  if (mq.matches) { // window width is at less than 600px
-    nav_trigger.addEventListener('click', ()=>{
-      if (!nav_trigger.classList.contains('active')){
-        nav_trigger.classList.add('active');
-        burger_menu.play();
-        burger_menu.reverse();
-      }else if(nav_trigger.classList.contains('active')){
-        nav_trigger.classList.remove('active');
-        burger_menu.play();
-        burger_menu.reverse();
-      }})
-
-
-
-
-
-
 buttons = document.querySelectorAll('.pieces_buttons > button');
 function removeClicked(){
   buttons.forEach(button => {
@@ -108,6 +90,24 @@ function removeClicked(){
     }
   });
 }
+
+var mq = window.matchMedia( "(max-width: 600px)" );
+if (mq.matches) { // window width is at less than 600px
+  nav_trigger.addEventListener('click', ()=>{
+    if (!nav_trigger.classList.contains('active')){
+      nav_trigger.classList.add('active');
+      burger_menu.play();
+      burger_menu.reverse();
+    }else if(nav_trigger.classList.contains('active')){
+      nav_trigger.classList.remove('active');
+      burger_menu.play();
+      burger_menu.reverse();
+    }})
+}
+
+
+
+
 
 
 //////////Truck////////////
@@ -273,7 +273,4 @@ function truckAnimation(){
       .add(rolltonDrop)
       .add(truckAfter)
       .add(rolltonStick, '-=8000')
-  }
-
-
   }
